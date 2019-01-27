@@ -1,0 +1,178 @@
+html, body, p, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+.main-wrapper {
+  background-color: #efefef;
+  width: 100vw; }
+  .main-wrapper header {
+    background: url("../img/header_background_v2.jpg") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh; }
+    .main-wrapper header .top-wrapper {
+      width: 100vw;
+      height: 10vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .main-wrapper header .top-wrapper .logo img {
+        width: 231px;
+        height: 137px; }
+      .main-wrapper header .top-wrapper nav {
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .main-wrapper header .top-wrapper nav a {
+          width: 16.6666666667vw;
+          color: #ff5722;
+          font-weight: bolder;
+          text-align: center;
+          text-transform: uppercase;
+          line-height: 6.25vw;
+          height: 5vw;
+          text-decoration: none;
+          border-left: 2px solid #cfd8dc; }
+          .main-wrapper header .top-wrapper nav a:first-child {
+            border-left: none; }
+    .main-wrapper header section {
+      margin: 25vh auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main-wrapper header section h1 {
+        color: #ff5722;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .main-wrapper header section a {
+        background-color: #0401ac;
+        color: #fffff2;
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 50px; }
+  .main-wrapper main {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: flex-end;
+    color: #757589; }
+    .main-wrapper main .toolbar {
+      margin: 3px 0;
+      height: 37px;
+      width: 200px; }
+      .main-wrapper main .toolbar input {
+        padding: 12px 0px 12px 19px; }
+    .main-wrapper main section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 20px 0; }
+      .main-wrapper main section h1 {
+        font-weight: bold;
+        font-size: 17px; }
+      .main-wrapper main section article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #ffffff;
+        padding: 6px;
+        margin-bottom: 10px; }
+        .main-wrapper main section article div {
+          width: 95%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 6px; }
+          .main-wrapper main section article div .post .post-description {
+            color: #d4c3bd;
+            border-bottom: #cfd8dc solid 1px;
+            font-size: small;
+            padding: 3px; }
+          .main-wrapper main section article div .post h3 {
+            color: #0097a7;
+            font-weight: 800;
+            text-transform: uppercase; }
+          .main-wrapper main section article div .btn {
+            background-color: #0401ac;
+            color: #fffff2;
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            line-height: 50px;
+            margin: 20px 0 0 400px; }
+    .main-wrapper main #about {
+      width: 70vw; }
+      .main-wrapper main #about div h1 {
+        text-align: end;
+        font-weight: 800;
+        text-transform: uppercase; }
+      .main-wrapper main #about div p {
+        margin-bottom: 20px; }
+      .main-wrapper main #about div img {
+        width: 70vw; }
+    .main-wrapper main #contact {
+      width: 70vw; }
+      .main-wrapper main #contact h1 {
+        text-align: end;
+        font-weight: 800;
+        text-transform: uppercase; }
+      .main-wrapper main #contact h4 {
+        margin-top: 0;
+        text-align: end;
+        font-weight: 700;
+        text-transform: uppercase; }
+      .main-wrapper main #contact .form {
+        width: 70vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .main-wrapper main #contact .form .top-field {
+          margin-top: 20px;
+          width: 34vw; }
+          .main-wrapper main #contact .form .top-field .form-text {
+            text-align: end;
+            color: #0097a7; }
+            .main-wrapper main #contact .form .top-field .form-text:after {
+              content: "*";
+              color: #0097a7; }
+          .main-wrapper main #contact .form .top-field .contact-inf {
+            width: 100%;
+            height: 50px; }
+        .main-wrapper main #contact .form .bottom-field {
+          margin-top: 20px;
+          width: 70vw; }
+          .main-wrapper main #contact .form .bottom-field .form-text {
+            text-align: end;
+            color: #0097a7; }
+          .main-wrapper main #contact .form .bottom-field #contact-message {
+            width: 100%; }
+        .main-wrapper main #contact .form .btn-form {
+          background-color: #0401ac;
+          color: #fffff2;
+          width: 200px;
+          height: 50px;
+          font-weight: bold;
+          text-align: center;
+          text-transform: uppercase;
+          text-decoration: none;
+          line-height: 50px;
+          margin: 20px 0 0 780px; }
+  .main-wrapper footer {
+    font-size: small;
+    padding: 10px; }

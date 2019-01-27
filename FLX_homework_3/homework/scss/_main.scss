@@ -1,0 +1,258 @@
+@mixin button {
+    background-color: $buttonColor;
+    color: $buttonTxtColor;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration:none;
+    line-height: 50px;
+}
+
+
+html, body, p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font: $pageFont;
+}
+.main-wrapper {
+    background-color: $backgroundColor;
+    width: $sizesBackground;
+
+    header {
+        background: url($backgroundImg) no-repeat;
+        background-size: cover;
+        width: $sizesBackground;
+        height: 100vh;
+
+        .top-wrapper {
+            width: $sizesBackground;
+            height: $sizesBackground / 10;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .logo {
+
+
+                img {
+                    width: 231px;
+                    height: 137px;
+                }
+            }
+
+            nav {
+                width: $sizesBackground / 2;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    width: $sizesBackground / 6;
+                    color: $headerColor;
+                    font-weight: bolder;
+                    text-align: center;
+                    text-transform: uppercase;
+                    line-height: $sizesBackground /16;
+                    height: $sizesBackground / 20;
+                    text-decoration: none;
+                    border-left: 2px solid $navBorderColor;
+
+                    &:first-child {
+                        border-left: none;
+                    }
+                }
+            }
+        }
+
+        section {
+            margin: 25vh auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            h1 {
+                color: $headerColor;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            a {
+                @include button;
+            }
+        }
+    }
+
+    main {
+        width: $sizesBackground * 0.7;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: flex-end;
+        color: $mainColor;
+
+        .toolbar {
+            margin: 3px 0;
+            height: 37px;
+            width: 200px;
+
+            input {
+                padding: 12px 0px 12px 19px;
+            }
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 20px 0;
+
+            h1 {
+                font-weight: bold;
+                font-size: 17px;
+            }
+
+            article {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                background-color: $blockColor;
+                padding: 6px;
+                margin-bottom: 10px;
+
+                div {
+                    width: 95%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-left: 6px;
+
+
+
+                    .post {
+
+
+
+                        .post-description {
+                            color: $descrColor;
+                            border-bottom: $lineColor solid 1px;
+                            font-size: small;
+                            padding: 3px;
+                        }
+
+                        h3 {
+                            color: #0097a7;
+                            font-weight: 800;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .btn {
+
+                        @include button;
+                        margin: 20px 0 0 400px;
+                    }
+                }
+            }
+        }
+
+        #about {
+            width: $sizesBackground * 0.7;
+
+            div {
+                h1 {
+                    text-align: end;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+
+            div {
+                img {
+                    width: $sizesBackground * 0.7;
+                }
+            }
+        }
+
+        #contact {
+            width: $sizesBackground * 0.7;
+
+            h1 {
+                text-align: end;
+                font-weight: 800;
+                text-transform: uppercase;
+            }
+
+            h4 {
+                margin-top: 0;
+                text-align: end;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .form {
+                width: $sizesBackground * 0.7;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .top-field {
+                    margin-top: 20px;
+                    width: 34vw;
+
+                    .form-text {
+                        text-align: end;
+                        color: #0097a7;
+
+                        &:after {
+                            content: "*";
+                            color: #0097a7;
+                        }
+                    }
+
+                    .contact-inf {
+                        width: 100%;
+                        height: 50px;
+                    }
+                }
+
+                .bottom-field {
+                    margin-top: 20px;
+                    width: $sizesBackground * 0.7;
+
+                    .form-text {
+                        text-align: end;
+                        color: #0097a7
+                    }
+
+
+                    #contact-message {
+                        width: 100%;
+                    }
+                }
+
+                .btn-form {
+                    @include button;
+                    margin: 20px 0 0 780px;
+                }
+            }
+        }
+    }
+
+    footer {
+        font-size: small;
+        padding: 10px;
+    }
+}
