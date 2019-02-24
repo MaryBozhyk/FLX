@@ -39,11 +39,9 @@ button{
     border: transparent;
     background: transparent;
 }
-
 .material-icons{
         font-size: 40px;
 }
-
 .divider{
     width: 100%;
     height: 3px;
@@ -67,8 +65,7 @@ img{
 }
 .taskText{
     width: 85%;
-    cursor: move;
-   
+    cursor: move;  
 }
 #fullList{
     text-align: center;
